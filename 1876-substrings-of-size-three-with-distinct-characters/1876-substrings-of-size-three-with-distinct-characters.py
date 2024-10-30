@@ -6,7 +6,7 @@ class Solution:
         res=0
        
         while j<len(s):
-            print(i,j,len(temp))
+          
            
             if s[j] not in temp:
                 temp.add(s[j])
