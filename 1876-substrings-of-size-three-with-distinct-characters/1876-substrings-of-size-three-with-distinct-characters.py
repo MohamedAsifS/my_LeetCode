@@ -17,7 +17,7 @@ class Solution:
                 j=i
 
             if len(temp)==3:
-                print(temp)
+               
                 temp=set()
                 res+=1
                 i+=1
