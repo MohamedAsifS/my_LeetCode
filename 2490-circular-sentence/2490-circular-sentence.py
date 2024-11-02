@@ -16,7 +16,7 @@ class Solution:
                 return False
             prev=sen[i][-1]
         if sen[0][0]!=sen[-1][-1]:
-            print("  sd")
+           
             return False
         return True
         
