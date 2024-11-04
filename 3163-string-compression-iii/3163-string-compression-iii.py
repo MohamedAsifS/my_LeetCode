@@ -30,7 +30,6 @@ class Solution:
             prev=v[i]
        
         if temp >9:
-            print("a",temp)
             while temp>=9:
                    
                     comp+=str(9)
