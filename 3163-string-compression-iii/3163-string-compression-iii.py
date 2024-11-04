@@ -13,14 +13,12 @@ class Solution:
            
 
             elif v[i-1] !=v[i] :
-                print(temp)
                 while temp>=9:
                    
                     comp+=str(9)
                     comp+=v[i-1]
                     temp-=9
                 if temp >0:
-                    print(temp)
                     comp+=str(temp)
                     comp+=v[i-1]
                     temp=1
@@ -32,12 +30,13 @@ class Solution:
             prev=v[i]
        
         if temp >9:
+            print("a",temp)
             while temp>=9:
                    
                     comp+=str(9)
                     comp+=v[i-1]
                     temp-=9
-                    if temp >0:
+            if temp >0:
                        comp+=str(temp)
                        comp+=v[i-1]
                        temp=1
