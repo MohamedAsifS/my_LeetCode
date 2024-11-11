@@ -24,7 +24,7 @@ class Solution:
                      gue[guess[i]]=1
                else:
                      gue[guess[i]]+=1
-               print(sec,gue)
+              
                 
                if secret[i] in gue and gue[secret[i]]>0:
                      c+=1
@@ -32,10 +32,10 @@ class Solution:
                      sec[secret[i]]-=1
                if guess[i] in sec and sec[guess[i]]>0:
                       c+=1
-                      print("a")
+                     
                       sec[guess[i]]-=1
                       gue[guess[i]]-=1
-               print(sec,gue)
+              
         return str(b)+"A"+str(c)+"B"
                     
                    
