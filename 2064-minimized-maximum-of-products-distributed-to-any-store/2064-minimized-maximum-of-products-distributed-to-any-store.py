@@ -7,7 +7,7 @@ class Solution:
             return  store <= n
         
 
-        l,r=0,max(quantities)
+        l,r=1,max(quantities)
         res=0
 
         while l <= r:
