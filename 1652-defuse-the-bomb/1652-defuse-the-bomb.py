@@ -3,23 +3,23 @@ class Solution:
 
         length=len(code)
 
-        code = code + code
+        
         res=[]
         if k>=0:
+           code = code + code
            for i in range(len(code)):
               res.append(sum(code[i+1:k+1]))
               k=k+1
            return res[0:length]
         else:
-            code =code+code
             k=k*-1
-            count=0
-            code.reverse()
-            res.append(sum(code[count:k]))
+            code =code[::-1][0:k][::-1]+code
+            print(code)
+            
+
             for i in range(len(code)):
-                count+=3
-                k+=3
-                res.append(sum(code[count:k]))
+                res.append(sum(code[i:k]))
+                k=k+1
             return  res[0:length]
                
                 
