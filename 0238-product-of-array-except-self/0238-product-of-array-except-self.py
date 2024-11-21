@@ -7,7 +7,7 @@ class Solution:
         for i in range(len(nums)):
             pre[i]=mul
             mul=nums[i]*mul
-        print(pre)
+      
         mul=1
         for i in range(len(nums)-1,-1,-1):
             res[i]=mul*pre[i]
