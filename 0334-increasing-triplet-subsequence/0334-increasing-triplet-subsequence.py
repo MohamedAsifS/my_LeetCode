@@ -1,13 +1,15 @@
 class Solution:
     def increasingTriplet(self, nums: List[int]) -> bool:
-        count=0
-        for i in range(1,len(nums)):
-            if nums[i-1]<nums[i]:
-                count+=1
-                print(nums[i],nums[i-1],count)
-           
-        print(count)
-        if count>=3:
-            return True
-        else:
-            return False
+
+        h1=float('inf')
+        h2=float('inf')
+
+        for i in nums:
+            if i <=h1:
+                h1=i
+            elif i<=h2:
+                h2=i
+            else:
+                return True
+        return False
+        
