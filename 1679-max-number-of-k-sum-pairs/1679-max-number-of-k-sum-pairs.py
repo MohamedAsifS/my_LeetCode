@@ -7,9 +7,8 @@ class Solution:
         for i in nums:
             if i in table and table[i]>=1:
                  res+=1
-                 print(i,table[i])
+            
                  table[i]-=1
-              
             elif k-i not in table:
                 table[k-i]=1
             elif k-i in table:
