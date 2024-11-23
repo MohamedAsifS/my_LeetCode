@@ -1,15 +1,18 @@
 class Solution:
     def maxOperations(self, nums: List[int], k: int) -> int:
 
-        nums=sorted(nums)
-        l=0
-        r=len(nums)-1
+       
+        table={}
         res=0
-        while l<r:
-            if nums[l]+nums[r]==k:
-                print(nums[l],nums[r])
-                res+=1
-            l+=1
-            r-=1
+        for i in nums:
+            if i in table and table[i]>=1:
+                 res+=1
+                 print(i,table[i])
+                 table[i]-=1
+              
+            elif k-i not in table:
+                table[k-i]=1
+            elif k-i in table:
+                table[k-i]+=1
+          
         return res
-        
