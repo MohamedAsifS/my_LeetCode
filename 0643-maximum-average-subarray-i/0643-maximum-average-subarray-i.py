@@ -9,9 +9,9 @@ class Solution:
         for r in range(len(nums)):
             sum+=nums[r]
             if r==(k-1):
-                 print(sum)
+              
                  res=max(res,sum)
-                 print(res)
+              
                 
                  sum-=nums[l]
                  l=l+1
