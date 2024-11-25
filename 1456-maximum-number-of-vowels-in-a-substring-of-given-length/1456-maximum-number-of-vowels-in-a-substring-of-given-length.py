@@ -4,7 +4,6 @@ class Solution:
         l=0
         let={"a","e","o","i","u"}
         res=0
-        n=k
         count=0
         for r in range(len(s)):
             if s[r] in let:
@@ -12,9 +11,9 @@ class Solution:
             if r==(k-1):
                
                 res=max(res,count)
-                print(res,count)
+                
                 if s[l] in let:
-                    print(s[l])
+             
                     count-=1
                 l+=1
                 k+=1
