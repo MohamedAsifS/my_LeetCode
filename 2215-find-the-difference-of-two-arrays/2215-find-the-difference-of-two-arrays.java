@@ -12,8 +12,7 @@ class Solution {
         for(int i:nums2){
             num2.add(i);
         }
-        System.out.println(num1);
-        System.out.println(num2);
+   
         List <Integer> temp=new ArrayList<>();
        for(int i:num1){
         if (!num2.contains(i)){
