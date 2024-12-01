@@ -1,16 +1,17 @@
 class Solution:
     def checkIfExist(self, arr: List[int]) -> bool:
-        hashp={}
+        box=set()
     
 
-        for i in range(len(arr)):
-            temp=arr[i]*2
-            div=arr[i]/2
-            if temp in hashp or div in hashp:
-                return True
+        for i in arr:
+            temp=i*2
+            div=i/2
+            if temp in box or div in box:
+                   return True
             else:
-                hashp[arr[i]]=temp
-                
+                box.add(i)
+            
+           
    
         return False
 
