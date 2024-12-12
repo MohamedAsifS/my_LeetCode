@@ -1,18 +1,12 @@
 import heapq
+
+
 class Solution:
     def pickGifts(self, gifts: List[int], k: int) -> int:
-         
-        
-      
-         for i in range(k):
-             heapq._heapify_max(gifts)
-             gifts[0]=int(math.sqrt(gifts[0]))
-   
-         return sum(gifts)
+        gifts = [-g for g in gifts]
+        heapq.heapify(gifts)
 
-        
-       
-
-       
-          
-        
+        for i in range(k):
+            last = -heapq.heappop(gifts)
+            heapq.heappush(gifts, -floor(sqrt(last)))
+        return -sum(gifts)
