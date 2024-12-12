@@ -6,7 +6,8 @@ class Solution:
       
          for i in range(k):
              heapq._heapify_max(gifts)
-             gifts[0]=math.sqrt(gifts[0])
+             gifts[0]=int(math.sqrt(gifts[0]))
+   
          return int(sum(gifts))
 
         
