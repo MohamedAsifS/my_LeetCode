@@ -15,12 +15,7 @@ class Solution:
         hash1={}
         hash2={}
 
-        for i in grid:
-            val=tuple(i)
-            if val not in hash1:
-                hash1[val]=1
-            else:
-                hash1[val]+=1
+     
         for i in colinr:
             val=tuple(i)
             if val not in hash2:
