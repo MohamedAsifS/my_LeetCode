@@ -6,7 +6,7 @@ class Solution:
         indi=0
         for i in range(1,len(values)):
                
-                print(res,maxi,indi,i)
+  
                 res=max(res,maxi+values[i]+(indi-i))
                 
                 if maxi-i < values[i]-indi:
