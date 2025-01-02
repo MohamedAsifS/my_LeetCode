@@ -1,19 +1,20 @@
 class Solution:
-    def vowel_count(self,word):
-        e={"a","e","i","o","u"}
-        if len(word)==1 and word in e:
-            return 1
-        elif word[0] in e and word[-1] in e:
-            return 1
-        else:
-            return 0
+
+       
 
     def vowelStrings(self, words: List[str], queries: List[List[int]]) -> List[int]:
         res=[]
         temp=0
+        e={"a","e","i","o","u"}
         for i in words:
-             temp+=self.vowel_count(i)
-             res.append(temp)
+           
+            if len(i)==1 and i in e:
+                temp+=1
+            elif i[0] in e and i[-1] in e:
+                temp+=1
+           
+           
+            res.append(temp)
    
         final=[]
         for i in queries:
