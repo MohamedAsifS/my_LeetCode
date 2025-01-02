@@ -14,7 +14,7 @@ class Solution:
         for i in words:
              temp+=self.vowel_count(i)
              res.append(temp)
-        print(res)
+   
         final=[]
         for i in queries:
             temp=res[i[1]]
