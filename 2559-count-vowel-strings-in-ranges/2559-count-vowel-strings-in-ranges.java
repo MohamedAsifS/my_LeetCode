@@ -23,9 +23,9 @@ class Solution {
 
         }
 
-        for(int i:arr){
-            System.out.println(i);
-        }
+        // for(int i:arr){
+        //     System.out.println(i);
+        // }
         int[] final1=new int[queries.length];
         count=0;
         for(int[] j:queries){
