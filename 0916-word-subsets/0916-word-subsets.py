@@ -3,25 +3,46 @@ class Solution:
         
         res=[]
 
-        temp=[]
-        for i in words2:
-         
-          
-                
-               
-                for j in i:
-                    temp.append(j)
-
         
-      
-            
+        
+        
+        
+        freq=[0]*26 
+        temp=[0]*26     
+        for word in words2:
+           for i in word:
+                temp[ord(i)-ord('a')]+=1
+           for m in range(26):
+               freq[m]=max(freq[m],temp[m])
+           temp=[0]*26
         for i in words1:
+            maxi=[0]*26
             check=True
-            for j in temp:
-                if j not in i:
+            for j in i:
+                maxi[ord(j)-ord('a')]+=1
+            for u in range(26):
+                if maxi[u] < freq[u]:
                     check=False
             if check:
                 res.append(i)
+            
+
+         
+                
+
+            
+
+        
+      
+  
+       
+              
+                
+            
+                     
+           
+           
+                 
 
                
         return res
