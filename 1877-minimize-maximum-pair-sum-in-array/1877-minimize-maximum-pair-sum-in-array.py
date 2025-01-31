@@ -1,6 +1,6 @@
 class Solution:
     def minPairSum(self, nums: List[int]) -> int:
-        nums=sorted(nums)
+        nums.sort()
         r=0
         l=len(nums)-1
         res=0
