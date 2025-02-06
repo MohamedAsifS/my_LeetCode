@@ -13,7 +13,7 @@ class Solution:
                     ans[cal]=1
                 else:
                     ans[cal]+=1
-        print(ans)
+      
         for i in ans:
              p=((ans[i]-1)*ans[i]//2)
              count+=p*8
