@@ -27,7 +27,7 @@ class ProductOfNumbers:
             return 0
         elif  length-k == (self.zero+1):
             return self.stack[-1]
-        print(self.stack[-1],self.stack[(length-1)-k],k,self.zero,self.stack)
+       
         
         return  self.stack[-1]//self.stack[(length-1)-k]
         
