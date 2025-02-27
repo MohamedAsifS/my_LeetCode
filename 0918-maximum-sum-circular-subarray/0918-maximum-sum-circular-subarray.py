@@ -21,5 +21,5 @@ class Solution:
         
 
            
-        return max(arr_max,(sum(nums)-arr_min))
+        
         
