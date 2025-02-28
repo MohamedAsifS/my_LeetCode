@@ -4,7 +4,7 @@ class Solution:
         hash={}
         res=set()
         l=10
-        print(len(s))
+      
 
         for i in range(0,len(s)-9):
             slices=s[i:l]
