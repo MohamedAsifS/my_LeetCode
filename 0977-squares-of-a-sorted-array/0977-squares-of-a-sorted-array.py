@@ -10,9 +10,9 @@ class Solution:
             else:
                 nums[i]=nums[i]**2
                 
-        print(nums)
+   
         nums=nums[count:len(nums)]
-        print(nums)
+    
         while len(nums)!=0 or len(less)!=0:
             if nums and less and nums[0] <=  less[-1]:
                 res.append(nums.pop(0))
