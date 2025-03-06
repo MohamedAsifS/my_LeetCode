@@ -14,7 +14,7 @@ class Solution:
                     res[0]=j
        
         for i in hash.keys():
-            print(i)
+            
             if hash[i]==False:
 
                 res[1]=i
