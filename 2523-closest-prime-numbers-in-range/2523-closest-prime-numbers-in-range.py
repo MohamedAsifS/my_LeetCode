@@ -30,7 +30,7 @@ class Solution:
             if num[i]-num[i-1]<res:
                 
                 res=num[i]-num[i-1]
-                print(res)
+       
                 final[0]=num[i-1]
                 final[1]=num[i]
         return final
