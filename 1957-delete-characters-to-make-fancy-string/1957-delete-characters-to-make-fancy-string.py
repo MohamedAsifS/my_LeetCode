@@ -1,23 +1,15 @@
 class Solution:
     def makeFancyString(self, s: str) -> str:
-        res=s[0]
-        temp_count=1
-    
-
+        res=""
+        count=0
         for i in range(1,len(s)):
-            if s[i]==res[-1]:
-                temp_count+=1
+            if s[i-1]==s[i]:
+                count+=1
+            elif s[i-1]!=s[i]:
+                count=0
+            if count <2:
+                res+=s[i-1]
+        return res+s[len(s)-1]
 
-                if temp_count<3:
-                    res+=s[i]
-            else:
-                temp_count=1
-                res+=s[i]
-        return res
-
-            
-
-        
-            
 
         
