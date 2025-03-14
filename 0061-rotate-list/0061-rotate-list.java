@@ -39,14 +39,14 @@ class Solution {
 
        
        
-        System.out.println(len);
+        
 
         while(len>1){
             temp=temp.next;
             len--;
 
         }
-        System.out.println(need+" "+len+" "+temp.val);
+       
 
         ListNode join= new ListNode();
         join.next=temp.next;
@@ -63,7 +63,7 @@ class Solution {
 
 
 
-        System.out.println(len);
+        
 
 
 
