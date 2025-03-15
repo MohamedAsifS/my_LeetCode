@@ -3,7 +3,7 @@ class Solution:
         n=len(nums)
         to=k%n
         if to==n:
-            return 
+            return nums
         while to>0:
             val=nums.pop()
             nums.insert(0,val)
