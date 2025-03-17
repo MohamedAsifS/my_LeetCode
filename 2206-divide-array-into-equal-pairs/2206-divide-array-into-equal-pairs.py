@@ -8,15 +8,10 @@ class Solution:
                 hash[i]=1
             else:
                 hash[i]+=1
-        check=len(nums)//2
-        need=len(nums)//check
-        if need%2!=0:
-            return False
-
 
 
         for i in hash:
-            if hash[i]%need!=0:
+            if hash[i]%2!=0:
                 return False
         return True
 
