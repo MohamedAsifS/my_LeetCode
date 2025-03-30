@@ -5,7 +5,7 @@ class Solution:
 
         for i in range(len(s)):
             hash[s[i]]=i
-        print(hash)    
+           
 
         check=-1 
         res=[] 
