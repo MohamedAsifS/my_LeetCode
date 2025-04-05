@@ -16,10 +16,10 @@ class Solution:
 
         
         # up both is good but we need more effiecent one 
-        print(to)
+     
         for i in range(n):
             rotated[(i+to) % n] = nums[i]
-            print((i+to) % n)
+           
         for i in range(n):
             nums[i]= rotated[i]
 
