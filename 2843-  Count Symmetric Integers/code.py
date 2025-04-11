@@ -5,7 +5,8 @@ class Solution:
                s=str(i)
                if len(s)%2==0:
                     mid=len(s)//2
-                    if sum(map(int,s[:mid])) == sum(map(int,s[mid:])):
+                    if sum(int (i) for i in s[:mid]) == sum(int(i) for i in s[mid:]):
                         count+=1
+      
         return count
         
