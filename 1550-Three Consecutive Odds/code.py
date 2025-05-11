@@ -7,10 +7,8 @@ class Solution:
         for i in arr:
             if i%2==1:
                 count+=1
-                res=max(res,count)
+                if count==3:
+                    return True
             else:
                 count=0
-        if res >=3:
-            return True
-        else:
-            return False
+        return False
